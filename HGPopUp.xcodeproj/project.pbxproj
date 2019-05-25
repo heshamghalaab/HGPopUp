@@ -14,6 +14,14 @@
 		9C2F11DD229942CF00B9E0EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2F11DB229942CF00B9E0EB /* LaunchScreen.storyboard */; };
 		9C2F11E8229942CF00B9E0EB /* HGPopUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F11E7229942CF00B9E0EB /* HGPopUpTests.swift */; };
 		9C2F11F3229942CF00B9E0EB /* HGPopUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F11F2229942CF00B9E0EB /* HGPopUpUITests.swift */; };
+		9C2F12032299430A00B9E0EB /* HGTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F12022299430A00B9E0EB /* HGTableView.swift */; };
+		9C2F1205229943BC00B9E0EB /* HGPopUpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F1204229943BC00B9E0EB /* HGPopUpProtocol.swift */; };
+		9C2F12082299443800B9E0EB /* HGPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F12062299443800B9E0EB /* HGPopUpVC.swift */; };
+		9C2F12092299443800B9E0EB /* HGPopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2F12072299443800B9E0EB /* HGPopUpVC.xib */; };
+		9C2F12112299475400B9E0EB /* HGPopUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F12102299475400B9E0EB /* HGPopUpPresenter.swift */; };
+		9C2F121B22994A7600B9E0EB /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F121A22994A7600B9E0EB /* Filter.swift */; };
+		9C2F121E22994EAB00B9E0EB /* HGPopUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F121C22994EAB00B9E0EB /* HGPopUpCell.swift */; };
+		9C2F121F22994EAB00B9E0EB /* HGPopUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2F121D22994EAB00B9E0EB /* HGPopUpCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		9C2F11EE229942CF00B9E0EB /* HGPopUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGPopUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2F11F2229942CF00B9E0EB /* HGPopUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGPopUpUITests.swift; sourceTree = "<group>"; };
 		9C2F11F4229942CF00B9E0EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C2F12022299430A00B9E0EB /* HGTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGTableView.swift; sourceTree = "<group>"; };
+		9C2F1204229943BC00B9E0EB /* HGPopUpProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGPopUpProtocol.swift; sourceTree = "<group>"; };
+		9C2F12062299443800B9E0EB /* HGPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGPopUpVC.swift; sourceTree = "<group>"; };
+		9C2F12072299443800B9E0EB /* HGPopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGPopUpVC.xib; sourceTree = "<group>"; };
+		9C2F12102299475400B9E0EB /* HGPopUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGPopUpPresenter.swift; sourceTree = "<group>"; };
+		9C2F121A22994A7600B9E0EB /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		9C2F121C22994EAB00B9E0EB /* HGPopUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGPopUpCell.swift; sourceTree = "<group>"; };
+		9C2F121D22994EAB00B9E0EB /* HGPopUpCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGPopUpCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +113,9 @@
 		9C2F11D1229942CD00B9E0EB /* HGPopUp */ = {
 			isa = PBXGroup;
 			children = (
+				9C2F120A229946D100B9E0EB /* HGPopUp */,
 				9C2F11D2229942CD00B9E0EB /* AppDelegate.swift */,
+				9C2F121A22994A7600B9E0EB /* Filter.swift */,
 				9C2F11D4229942CD00B9E0EB /* ViewController.swift */,
 				9C2F11D6229942CD00B9E0EB /* Main.storyboard */,
 				9C2F11D9229942CF00B9E0EB /* Assets.xcassets */,
@@ -123,6 +141,52 @@
 				9C2F11F4229942CF00B9E0EB /* Info.plist */,
 			);
 			path = HGPopUpUITests;
+			sourceTree = "<group>";
+		};
+		9C2F120A229946D100B9E0EB /* HGPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				9C2F120F2299473000B9E0EB /* HGPopUpPresenter */,
+				9C2F120E2299471800B9E0EB /* Protocols */,
+				9C2F120C229946E000B9E0EB /* View */,
+				9C2F120D229946E500B9E0EB /* Controller */,
+			);
+			path = HGPopUp;
+			sourceTree = "<group>";
+		};
+		9C2F120C229946E000B9E0EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C2F12072299443800B9E0EB /* HGPopUpVC.xib */,
+				9C2F121C22994EAB00B9E0EB /* HGPopUpCell.swift */,
+				9C2F121D22994EAB00B9E0EB /* HGPopUpCell.xib */,
+				9C2F12022299430A00B9E0EB /* HGTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C2F120D229946E500B9E0EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C2F12062299443800B9E0EB /* HGPopUpVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C2F120E2299471800B9E0EB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9C2F1204229943BC00B9E0EB /* HGPopUpProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9C2F120F2299473000B9E0EB /* HGPopUpPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C2F12102299475400B9E0EB /* HGPopUpPresenter.swift */,
+			);
+			path = HGPopUpPresenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +295,8 @@
 			files = (
 				9C2F11DD229942CF00B9E0EB /* LaunchScreen.storyboard in Resources */,
 				9C2F11DA229942CF00B9E0EB /* Assets.xcassets in Resources */,
+				9C2F121F22994EAB00B9E0EB /* HGPopUpCell.xib in Resources */,
+				9C2F12092299443800B9E0EB /* HGPopUpVC.xib in Resources */,
 				9C2F11D8229942CD00B9E0EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +323,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C2F11D5229942CD00B9E0EB /* ViewController.swift in Sources */,
+				9C2F12082299443800B9E0EB /* HGPopUpVC.swift in Sources */,
+				9C2F12032299430A00B9E0EB /* HGTableView.swift in Sources */,
+				9C2F121E22994EAB00B9E0EB /* HGPopUpCell.swift in Sources */,
 				9C2F11D3229942CD00B9E0EB /* AppDelegate.swift in Sources */,
+				9C2F12112299475400B9E0EB /* HGPopUpPresenter.swift in Sources */,
+				9C2F121B22994A7600B9E0EB /* Filter.swift in Sources */,
+				9C2F1205229943BC00B9E0EB /* HGPopUpProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
