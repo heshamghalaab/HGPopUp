@@ -22,6 +22,8 @@
 		9C2F121B22994A7600B9E0EB /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F121A22994A7600B9E0EB /* Filter.swift */; };
 		9C2F121E22994EAB00B9E0EB /* HGPopUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F121C22994EAB00B9E0EB /* HGPopUpCell.swift */; };
 		9C2F121F22994EAB00B9E0EB /* HGPopUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2F121D22994EAB00B9E0EB /* HGPopUpCell.xib */; };
+		9C5A31E222996B7100E356A1 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A31E122996B7100E356A1 /* UINavigationController+Extension.swift */; };
+		9C5A31E522996F1300E356A1 /* screenshot.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 9C5A31E422996F1300E356A1 /* screenshot.PNG */; };
 		9CB980E42299536900EB7649 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CB980E32299536900EB7649 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		9C2F121A22994A7600B9E0EB /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		9C2F121C22994EAB00B9E0EB /* HGPopUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGPopUpCell.swift; sourceTree = "<group>"; };
 		9C2F121D22994EAB00B9E0EB /* HGPopUpCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGPopUpCell.xib; sourceTree = "<group>"; };
+		9C5A31E122996B7100E356A1 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		9C5A31E422996F1300E356A1 /* screenshot.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.PNG; sourceTree = "<group>"; };
 		9CB980E32299536900EB7649 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +120,8 @@
 		9C2F11D1229942CD00B9E0EB /* HGPopUp */ = {
 			isa = PBXGroup;
 			children = (
+				9C5A31E322996ED300E356A1 /* ScreenShot */,
+				9C5A31E022996B5100E356A1 /* Extension */,
 				9C2F120A229946D100B9E0EB /* HGPopUp */,
 				9C2F11D2229942CD00B9E0EB /* AppDelegate.swift */,
 				9C2F121A22994A7600B9E0EB /* Filter.swift */,
@@ -190,6 +196,22 @@
 				9C2F12102299475400B9E0EB /* HGPopUpPresenter.swift */,
 			);
 			path = HGPopUpPresenter;
+			sourceTree = "<group>";
+		};
+		9C5A31E022996B5100E356A1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A31E122996B7100E356A1 /* UINavigationController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9C5A31E322996ED300E356A1 /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A31E422996F1300E356A1 /* screenshot.PNG */,
+			);
+			path = ScreenShot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB980E42299536900EB7649 /* README.md in Resources */,
+				9C5A31E522996F1300E356A1 /* screenshot.PNG in Resources */,
 				9C2F11DD229942CF00B9E0EB /* LaunchScreen.storyboard in Resources */,
 				9C2F11DA229942CF00B9E0EB /* Assets.xcassets in Resources */,
 				9C2F121F22994EAB00B9E0EB /* HGPopUpCell.xib in Resources */,
@@ -334,6 +357,7 @@
 				9C2F12112299475400B9E0EB /* HGPopUpPresenter.swift in Sources */,
 				9C2F121B22994A7600B9E0EB /* Filter.swift in Sources */,
 				9C2F1205229943BC00B9E0EB /* HGPopUpProtocol.swift in Sources */,
+				9C5A31E222996B7100E356A1 /* UINavigationController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

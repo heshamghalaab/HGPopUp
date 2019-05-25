@@ -34,6 +34,11 @@ class HGPopUpVC: UIViewController {
         setupUI()
     }
     
+    var barStyle = UIStatusBarStyle.lightContent
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return barStyle
+    }
+    
     // MARK: Methods
     /**
      This function is to configure any protocols.
@@ -60,12 +65,18 @@ class HGPopUpVC: UIViewController {
         titleLabel.text = popUpTitle
     }
     
+    /// this function will dismiss the the pop up with the changing of the status bar style.
+    private func dismissPopUp(){
+        barStyle = .default
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     // MARK: Actions
     /**
      dismiss the view controller when close button was tapped.
      */
     @IBAction private func onTapCloseButton(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        dismissPopUp()
     }
     
 }
@@ -86,7 +97,7 @@ extension HGPopUpVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         DispatchQueue.main.async {
-            self.dismiss(animated: true, completion: nil)
+            self.dismissPopUp()
             self.delegate?.didSelectRowFromPopUp(withRow: indexPath.row)
         }
     }

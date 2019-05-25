@@ -4,7 +4,10 @@ this repository is a custom popup that will make the user have the ability to se
 # Notes
 ### Tips
 * all you need is to wite this:
-1. let presenter = HGPopUpPresenter(vc: self)
-    presenter.present(.HGPopUp(withValues: Filter.values, AndTitle: Filter.title)) 
-2. listen for the HGPopUpProtocol.
-and all the logic will handled for you 
+- let presenter = HGPopUpPresenter(vc: self)
+- presenter.present(.HGPopUp(withValues: Filter.values, AndTitle: Filter.title)) 
+- listen for the HGPopUpProtocol.
+And all the logic will handled for you 
+
+### ScreenShots
+![](ScreenShot/screenshot.PNG)
