@@ -91,3 +91,14 @@ extension HGPopUpVC: UITableViewDelegate, UITableViewDataSource{
         }
     }
 }
+
+extension HGPopUpVC{
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        /* just to make the tableview make its calculation again to resize it self when the view willTransition to a new Collection even landscape or portrait, and you can get ot from UIApplication.shared.statusBarOrientation.isLandscape */
+        
+        coordinator.animate(alongsideTransition: { [unowned self] _ in
+            self.tableView.invalidateIntrinsicContentSize()
+        })
+    }
+}
