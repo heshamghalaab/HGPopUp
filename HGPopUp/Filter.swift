@@ -30,7 +30,7 @@ enum Filter: String {
     }
     
     static var values: [String]{
-        return ["All", "Canceled", "Delivered", "Ordered", "Processing", "Shipped", "All", "Canceled", "Delivered", "Ordered", "Processing", "Shipped"]
+        return ["All", "Canceled", "Delivered", "Ordered", "Processing", "Shipped"]
     }
     
     static var title: String{

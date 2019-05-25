@@ -22,6 +22,7 @@
 		9C2F121B22994A7600B9E0EB /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F121A22994A7600B9E0EB /* Filter.swift */; };
 		9C2F121E22994EAB00B9E0EB /* HGPopUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F121C22994EAB00B9E0EB /* HGPopUpCell.swift */; };
 		9C2F121F22994EAB00B9E0EB /* HGPopUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2F121D22994EAB00B9E0EB /* HGPopUpCell.xib */; };
+		9CB980E42299536900EB7649 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CB980E32299536900EB7649 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		9C2F121A22994A7600B9E0EB /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		9C2F121C22994EAB00B9E0EB /* HGPopUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGPopUpCell.swift; sourceTree = "<group>"; };
 		9C2F121D22994EAB00B9E0EB /* HGPopUpCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGPopUpCell.xib; sourceTree = "<group>"; };
+		9CB980E32299536900EB7649 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		9C2F11C6229942CD00B9E0EB = {
 			isa = PBXGroup;
 			children = (
+				9CB980E32299536900EB7649 /* README.md */,
 				9C2F11D1229942CD00B9E0EB /* HGPopUp */,
 				9C2F11E6229942CF00B9E0EB /* HGPopUpTests */,
 				9C2F11F1229942CF00B9E0EB /* HGPopUpUITests */,
@@ -293,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB980E42299536900EB7649 /* README.md in Resources */,
 				9C2F11DD229942CF00B9E0EB /* LaunchScreen.storyboard in Resources */,
 				9C2F11DA229942CF00B9E0EB /* Assets.xcassets in Resources */,
 				9C2F121F22994EAB00B9E0EB /* HGPopUpCell.xib in Resources */,
