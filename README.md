@@ -10,4 +10,4 @@ this repository is a custom popup that will make the user have the ability to se
 And all the logic will handled for you 
 
 ### ScreenShots
-![](ScreenShot/screenshot.PNG)
+<img src="HGPopUp/ScreenShot/screenshot.PNG" width="400">
